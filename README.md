@@ -32,9 +32,12 @@ To run the repo code:
  - scrape all data from app for front page with word cloud of most popular habits/todos?
    
 ### This app uses
-
+https://medium.com/technest/build-a-crud-todo-app-with-django-and-react-redux-8ddb0b6ac2f0 has been a guide for me to get started!
 1. React, Redux
 2. Django 
 3. Semantic UI
 4. PostgreSQL
 5. Lodash
+
+
+
