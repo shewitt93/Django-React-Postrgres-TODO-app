@@ -11,13 +11,22 @@ To run the repo code:
 5. npm run dev to start react app
   
 # Next to do
-
+1. Styling
 
 2. Add database and models
+  - Must be user individual 
   
 3. Add User authentication
+  - Allow users to only see their own dashboard
+  - email recovery/sign up/settings
    
 4. Add UI forms
+   - Completion of tasks
+   - more info, such as description/frequency etc?
+
+5. Implement testing via Pytest
+
+6. Add some form of graphical data of completions
    
 # This app uses
 
