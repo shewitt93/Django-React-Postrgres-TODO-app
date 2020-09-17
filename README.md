@@ -27,6 +27,7 @@ To run the repo code:
 5. Implement testing via Pytest
 
 6. Add some form of graphical data of completions
+ - scrape all data from app for front page with mind chart of most popular habits/todos?
    
 # This app uses
 
