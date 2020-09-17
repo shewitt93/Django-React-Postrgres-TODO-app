@@ -1,6 +1,6 @@
 
 
-### How to run repo
+# How to run repo
 To run the repo code:
 1. Fork and clone this repo
 2. cd into repo
