@@ -1,6 +1,6 @@
 
 
-### how to run repo
+### How to run repo
 To run the repo code:
 1. Fork and clone this repo
 2. cd into repo
@@ -19,3 +19,9 @@ To run the repo code:
    
 4. Add UI forms
    
+# This app uses
+
+1. React, Redux
+2. Django 
+3. Semantic UI
+4. PostgreSQL
