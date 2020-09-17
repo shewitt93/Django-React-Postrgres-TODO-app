@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'corsheaders',
+    
     'frontend.apps.FrontendConfig',
     'todos.apps.TodosConfig',
     'rest_framework',
@@ -43,9 +45,30 @@ INSTALLED_APPS = [
 ]
 
 REST_FRAMEWORK = {  # added
-    'DEFAULT_PERMISSION_CLASSES': [        'rest_framework.permissions.AllowAny'    ],    'DATETIME_FORMAT': "%m/%d/%Y %H:%M:%S",}
+    
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+        
+    ),
+      'DATETIME_FORMAT': "%m/%d/%Y %H:%M:%S",
+
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+    ),
+    }
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost:3000',
+    'http://localhost:8000'
+)
+JWT_AUTH = {
+    'JWT_RESPONSE_PAYLOAD_HANDLER': 'todocrud.utils.my_jwt_response_handler'
+}
+
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
