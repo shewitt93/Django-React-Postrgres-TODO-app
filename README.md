@@ -30,6 +30,7 @@ To run the repo code:
 
 6. Add some form of graphical data of completions
  - scrape all data from app for front page with word cloud of most popular habits/todos?
+ https://www.geeksforgeeks.org/generating-word-cloud-python/
    
 ### This app uses
 https://medium.com/technest/build-a-crud-todo-app-with-django-and-react-redux-8ddb0b6ac2f0 has been a guide for me to get started!
